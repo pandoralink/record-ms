@@ -1,0 +1,19 @@
+{
+  "name": "record",
+  "short_name": "record",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "record",
+  "icons": [
+    {
+      "src": "images/record-120x120.png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "images/record-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
