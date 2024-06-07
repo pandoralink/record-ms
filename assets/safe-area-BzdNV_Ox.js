@@ -1,0 +1,1 @@
+import{R as e}from"./index-By7UgRYt.js";import{w as t,c as o}from"./with-default-props-CBsXvwG_.js";const s="adm-safe-area",c=a=>t(a,e.createElement("div",{className:o(s,`${s}-position-${a.position}`)}));export{c as S};
