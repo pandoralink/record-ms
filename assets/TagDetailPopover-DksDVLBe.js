@@ -1,0 +1,1 @@
+import{j as i}from"./index-CD25rNzz.js";import"./with-default-props-c_1x5czA.js";import{P as r}from"./index-Cn27oSGc.js";const n=({timeList:e,children:o})=>i.jsx(r.Menu,{className:"tag-detail-popover",actions:e.map(t=>({key:t,text:new Date(t).toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}),icon:null})),placement:"bottom",trigger:"click",children:o});export{n as T};
