@@ -1,13 +1,8 @@
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open('v1');
-  for (const resource of resources) {
-    try {
-      await cache.add(resource);
-    } catch (err) {
-      console.error(`Failed to cache resource: ${resource}`, err);
-    }
-  }
+  await cache.addAll(resources);
 };
+
 const putInCache = async (request, response) => {
   const cache = await caches.open('v1');
   await cache.put(request, response);
@@ -72,6 +67,12 @@ self.addEventListener('install', (event) => {
     addResourcesToCache([
       './',
       './index.html',
+      './register.js',
+      './pwacompat.min.js',
+      './manifest.json',
+      './images/record.svg',
+      './images/record-120x120.png',
+      './images/record-512x512.png',
       './assets/ActionList-CSYnW-TP.css',
       './assets/ActionList-DjvNSERe.js',
       './assets/ActionNameTag-CUcQ-fDk.js',
@@ -125,7 +126,7 @@ self.addEventListener('fetch', (event) => {
     cacheFirst({
       request: event.request,
       preloadResponsePromise: event.preloadResponse,
-      fallbackUrl: './assets/index-DE9JW7L8.js',
+      fallbackUrl: './index.html',
     })
   );
 });
