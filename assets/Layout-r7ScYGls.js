@@ -1,0 +1,1 @@
+import{j as r,O as t}from"./index-A3j-_Inl.js";import{R as o}from"./context-jzoCB2od.js";import"./index-D4kv2pca.js";import"./isBrowser-CU3-RGUT.js";const p=()=>r.jsx(o,{children:r.jsx(t,{})});export{p as Layout};
