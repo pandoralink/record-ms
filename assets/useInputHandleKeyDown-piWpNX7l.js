@@ -1,1 +1,0 @@
-import{u as n}from"./index-swgKdKc9.js";function d({onEnterPress:u,onKeyDown:e,nativeInputRef:o,enterKeyHint:r}){const i=t=>{u&&(t.code==="Enter"||t.keyCode===13)&&u(t),e==null||e(t)};return n(()=>{const t=o.current;if(!(!r||!t))return t.setAttribute("enterkeyhint",r),()=>{t.removeAttribute("enterkeyhint")}},[r]),i}export{d as u};
